@@ -351,6 +351,7 @@ template {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .row-md-rev {
@@ -404,6 +405,117 @@ template {
 .col-md-12 {
     width: 100%;
 }
+
+.site-header {
+    color: #fff;
+    background-color: rgba(5, 5, 5, .9);
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.site-header__logo__graphic {
+        max-width: 100%;
+        max-width: 280px;
+        position: absolute;
+        background-color: rgb(5, 5, 5);
+        padding: 10px;
+        padding-top:20px;
+        padding-bottom: 5px;
+        top: 0px;
+        margin-top: -10px;
+        margin-left: 20px;
+    }
+
+.site-header h1 {
+    display: none;
+}
+
+.primary-nav {    
+    padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+
+.primary-nav {
+        padding-top: 0px
+}
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav--pull-right {
+            float: right
+    }
+    }
+
+.primary-nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+.primary-nav ul::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.primary-nav li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 7px;
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav li {
+            float: left;
+            padding-right: 20px;
+            display: block
+    }
+    }
+
+.primary-nav li a:hover {
+        color: #f1b981;
+    }
+
+.primary-nav li:last-child {
+        padding-right: 0px;
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav li:last-child {
+            padding-right: 20px
+    }
+    }
+
+.primary-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: .8em;
+        display: block;
+        padding: 5px 8px;
+    }
+
+@media (min-width: 800px) {
+
+.primary-nav a {
+            font-size: 1em;
+            padding: 12px 0px;
+            background-color: transparent
+    }
+
+            .primary-nav a.is-current-link {
+                /* color: $mainOrange; */
+            }
+    }
+
+.primary-nav .active-nav {
+        color: #E2231A;
+    }
 
 body{
     font-family: "Lato",Helvetica,Arial,sans-serif; 
@@ -463,4 +575,3 @@ button:hover{
     border: 1px solid #1976a1;
     color: #1976a1;
 }
-
