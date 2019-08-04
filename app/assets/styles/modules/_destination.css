@@ -1,0 +1,59 @@
+body{
+    font-family: "Lato",Helvetica,Arial,sans-serif; 
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.destination {
+
+    &__text {
+        padding:5%; 
+        & h3 {
+            font-size: 44px;
+            text-transform: none;
+            letter-spacing: 0px;
+            font-family: Montserrat, Helvetica, Arial, sans-serif;
+            font-weight: 600;
+        }
+        & p {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            line-height: 1.5;
+        }
+
+    }
+
+    &__image img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+.slide-2, .slide-3 {
+    display: none;
+}
+
+button {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+    background: #1976a1;
+    border: 1px solid #1976a1;
+    color: #fff;
+    height: 32px;
+    width: 150px;
+}
+
+button:hover{
+    background: #d9eef7;
+    border: 1px solid #1976a1;
+    color: #1976a1;
+}
