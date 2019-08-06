@@ -1,6 +1,11 @@
 @import 'normalize.css';
+@import 'base/_base';
 @import 'base/_mixins';
 @import 'modules/_row';
+@import 'modules/_section';
 @import 'modules/_site-header';
 @import 'modules/_primary-nav';
+@import 'modules/_large-hero';
+@import 'modules/_tours';
 @import 'modules/_destination';
+@import 'modules/_footer';

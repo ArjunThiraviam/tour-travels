@@ -8,15 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <link href="temp/styles/styles.css"  rel="stylesheet" type='text/css'>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
-        <!-- navigation -->
-        <header class="site-header">
+    <!-- navigation -->
+    <header class="site-header">
             <div class="wrapper">
                 <div class="site-header__logo">
-                    <div class="icoc site-header__logo__graphic">
-                        Madurai Meenakshi Travels
+                    <div class="icon site-header__logo__graphic">
+                        <img src="./assets/images/logo/travels-logo-4.png" alt="">
+                        <h1>Madurai Meenakshi Travels</h1>
                     </div>
                 </div>
                 <div class="site-header__menu-content">
@@ -33,7 +34,7 @@
                 </div>
             </div>
         </header>
-        
+            
         <!-- hero -->
         <div class="large-hero">
             <picture>
@@ -50,90 +51,129 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
-                </div>    
-                <div class="tour-text-container">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-pamban-bridge.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
                     <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                </div>    
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/kodaikanal-falls.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/kodaikanal-lake-view.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
+                    <h4>Madurai-Kodaikanal</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <h4>Madurai-Trichy-Tanjore </h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
+                    <h4>Madurai-Trichy-Palani</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <h4>Madurai-Thekkady-Munnar</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
+                    <h4>Madurai-Palani Packages</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <h4>Madurai-Rameswaram-Kanyakumari-Trivandrum</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
+            <div class="col-md-4 tour">
+                <div class="tour__image-container">
+                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
+                    <h4>Waterfalls Tour-Madurai-Coimbatore</h4>
                 </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="tour-image-container">
-                    <img src="" alt="">
-                </div>    
-                <div class="tour-text-container">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                    <p>Duration <span>4 Days 3 Nights</span></p>
+                <div class="tour__text-container">
+                    
+                    <div class="tour__text-container__details">
+                        <p>4 Days 3 Nights</p>
+                        <a href=""><button class="learn-more">Learn More</button></a>
+                    </div>                    
                 </div>
             </div>
 
         </div>
-
-        
+        <script src="assets/scripts/slider.js"></script>
 </body>
 </html>
