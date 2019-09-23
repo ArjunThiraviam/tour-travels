@@ -439,8 +439,19 @@ a {
 }
 
 .choose__image-container img {
-    width: 150px;
+    width: 80px;
     margin: auto;
+    margin-bottom: 20px;
+}
+
+#choose h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#choose h6 {
+    font-size: 16px;
+    margin-bottom: 40px;
 }
 
 .section {
@@ -450,7 +461,7 @@ a {
 }
 
 #choose {
-    background-color: #ccc;
+    background-color: #efefef;
 }
 
 .container {
@@ -458,6 +469,10 @@ a {
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.container-large {
+    max-width: unset;
 }
 
 .site-header {
