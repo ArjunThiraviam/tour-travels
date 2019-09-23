@@ -14,6 +14,12 @@
 .col-md-3 {
     width: 25%;
 }
+.col-md-3-small {
+    width: 20%;
+}
+.col-md-3-large {
+    width: 35%;
+}
 .col-md-4 {
     width: 33.33%;
 }

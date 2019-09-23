@@ -19,6 +19,8 @@
         list-style: none;
         display: inline-block;
         padding-right: 7px;
+        font-weight: 700;
+
         @mixin atMedium {
             float: left;
             padding-right: 20px;
@@ -27,7 +29,8 @@
         }
     }
     li a:hover {
-        color: #f1b981;
+        color: #ffc61a;
+        font-weight: 700;
     }
     li:last-child {
         padding-right: 0px;
@@ -38,7 +41,7 @@
     a {
         color: #fff;
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 700;
         font-size: .8em;
         display: block;
         padding: 5px 8px;
@@ -55,5 +58,6 @@
     }
     & .active-nav {
         color: #E2231A;
+        font-weight: 700;
     }
 }

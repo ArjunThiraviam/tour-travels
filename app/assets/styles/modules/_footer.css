@@ -1,4 +1,66 @@
 footer {
-    background-color: black;
-    color: #fff;
+    
+    background: #161616;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.2;
+    .footer-row { 
+        max-width: 80%;
+        margin: auto;  
+        padding-bottom: 30px; 
+    }
+    h6 {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Fira Sans Condensed',sans-serif;
+        color: #ffc61a;
+        margin: 60px 0 20px;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    p {
+        max-width: 320px;
+        margin-bottom: 10px;
+    }
+    li:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: " \f105";
+        font-size: 16px;
+        margin-right: 8px;
+        vertical-align: middle;
+        color: #ffc61a;
+        line-height: 1.7em;
+        
+    }
+    li {
+        /* border-bottom: 1px dotted #ccc; */
+        width: 80%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAABCAYAAABOrTWvAAAAGXRFW…RBVHjaYnR3d//PAAGMQAxm79ixg9HDw2NUfFR80IgDBBgAvfWN1mHQu4wAAAAASUVORK5CYII=) 0 100% repeat-x;
+        padding-left:5%;
+        margin: 0px 0px 5px 0px;
+    }
+    a li {
+        color: #FFF;
+    }
+}
+
+.copyright {
+    background: #0c0c0c;
+    color: #868686;
+    text-align: left;
+    padding: 37px 10% 27px;
+    display: block;
+    width: 100%;
+    /* padding: 0 10%; */
+    span {
+        color: #ffc61a;
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
 }

@@ -1,3 +1,25 @@
 .large-hero__title {
-    display: none;
+    /* display: none; */
+}
+.large-hero__image {
+    width: 100%;
+}
+.large-hero {
+    position: relative;
+}
+.tariff .large-hero__text-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffc61a;
+    font-size: 62px;
+    transform: translateY(-48%) translateX(-50%);
+    text-transform: uppercase;
+}
+.large-hero.tariff {
+    background-color: #000;
+}
+
+.tariff .large-hero__image {
+    opacity: .5;
 }

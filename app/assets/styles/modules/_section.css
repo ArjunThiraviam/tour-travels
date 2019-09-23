@@ -1,4 +1,9 @@
 .section {
     padding: 2rem 0rem;
     text-align: center;
+    min-height: 300px;
+}
+
+#choose {
+    background-color: #ccc;
 }

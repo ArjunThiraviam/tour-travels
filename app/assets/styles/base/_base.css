@@ -10,3 +10,10 @@ a {
 #__bs_script__ , title{
     display: none;
 }
+.container {
+    @mixin atMedium {
+        max-width: 80%;
+        margin: auto;
+    }
+
+}

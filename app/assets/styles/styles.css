@@ -1,11 +1,14 @@
 @import 'normalize.css';
-@import 'base/_base';
 @import 'base/_mixins';
+@import 'base/_base';
 @import 'modules/_row';
+@import 'modules/_choose';
 @import 'modules/_section';
+@import 'modules/_container';
 @import 'modules/_site-header';
 @import 'modules/_primary-nav';
 @import 'modules/_large-hero';
 @import 'modules/_tours';
 @import 'modules/_destination';
+@import 'modules/_tariff-plans.css';
 @import 'modules/_footer';

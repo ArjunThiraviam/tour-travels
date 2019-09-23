@@ -55,6 +55,7 @@ button {
     color: #fff;
     height: 32px;
     width: 150px;
+    margin: auto;
 }
 
 button:hover{

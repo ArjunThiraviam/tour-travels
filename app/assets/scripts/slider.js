@@ -13,3 +13,21 @@ setInterval( function() {
     
    }
 }, 5000);
+
+
+function getMood(){
+   var mood = ["Angry", "Happy", "Hungry", "Quiet"];
+   return mood[Math.floor(Math.random() * mood.length)];
+}
+
+
+class JSdemo extends React.Component {
+   render() {
+      return(
+         <div>
+            <h1> My current mood is : {getMood()}</h1>
+         </div>
+      );
+   }
+}
+React.createElement(components, props, children);
