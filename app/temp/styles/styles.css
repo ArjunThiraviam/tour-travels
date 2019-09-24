@@ -353,7 +353,8 @@ template {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    display: block;
+    font-family: "Lato",Helvetica,Arial,sans-serif; 
+    /* display: block; */
 }
 
 a {
@@ -438,20 +439,66 @@ a {
     width: 100%;
 }
 
+.callus-logo {
+    position: fixed;
+    bottom: 20px;
+    max-width: 80px;
+    left: 20px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.phonecall {
+    margin-top: 15px;
+    max-width: 40px;
+}
+
+.whatsapp {
+    max-width: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.callus-logo span {
+    margin-top: 5px;
+    font-size: 16px;
+    display: block;
+}
+
+.callus-logo a {
+    color: #fff;
+}
+
 .choose__image-container img {
     width: 80px;
     margin: auto;
     margin-bottom: 20px;
 }
 
+#choose h2 {
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+
 #choose h3 {
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
 #choose h6 {
     font-size: 16px;
     margin-bottom: 40px;
+}
+
+#choose .row {
+    max-width: 1080px;
+    margin: auto;
 }
 
 .section {
@@ -462,6 +509,16 @@ a {
 
 #choose {
     background-color: #efefef;
+}
+
+.destinations {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tour-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -601,22 +658,28 @@ a {
     position: relative;
 }
 
-.tariff .large-hero__text-content{
+.large-hero__text-content{
     position: absolute;
     top: 50%;
     left: 50%;
     color: #ffc61a;
     font-size: 62px;
+    text-align: center;
     transform: translateY(-48%) translateX(-50%);
     text-transform: uppercase;
 }
 
-.large-hero.tariff {
+.large-hero {
     background-color: #000;
 }
 
-.tariff .large-hero__image {
+.homepage .large-hero__image {
+    opacity: 1;
+}
+
+.large-hero__image {
     opacity: .5;
+    display: block;
 }
 
 .tour {
@@ -719,10 +782,6 @@ a {
             margin-right: 15px;
         }
 
-body{
-    font-family: "Lato",Helvetica,Arial,sans-serif; 
-}
-
 .destination__text {
         padding:5%;
 
@@ -753,6 +812,7 @@ body{
         position: absolute;
         opacity: 0;
         transition: 1s ease-out;
+        left: 0;
     }
 
 .destination__image img.show {
@@ -847,6 +907,14 @@ button:hover{
     max-height: 150px;
 }
 
+.traiff-container-head > div.kilo-rental {
+    background-color: #317900;
+}
+
+.traiff-container-head > div.day-rental {
+    background-color: #1976a1;
+}
+
 footer {
     
     background: #161616;
@@ -898,10 +966,15 @@ footer li {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAABCAYAAABOrTWvAAAAGXRFW…RBVHjaYnR3d//PAAGMQAxm79ixg9HDw2NUfFR80IgDBBgAvfWN1mHQu4wAAAAASUVORK5CYII=) 0 100% repeat-x;
         padding-left:5%;
         margin: 0px 0px 5px 0px;
+        list-style-type: none;
     }
 
 footer a li {
         color: #FFF;
+    }
+
+footer a {
+        color: #ffc61a;
     }
 
 .copyright {

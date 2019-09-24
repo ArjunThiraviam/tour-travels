@@ -1,0 +1,31 @@
+.callus-logo {
+    position: fixed;
+    bottom: 20px;
+    max-width: 80px;
+    left: 20px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    line-height: 1;
+    font-size: 14px;
+}
+.phonecall {
+    margin-top: 15px;
+    max-width: 40px;
+}
+.whatsapp {
+    max-width: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.callus-logo span {
+    margin-top: 5px;
+    font-size: 16px;
+    display: block;
+}
+.callus-logo a {
+    color: #fff;
+}

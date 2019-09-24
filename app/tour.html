@@ -9,171 +9,234 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <link href="temp/styles/styles.css"  rel="stylesheet" type='text/css'>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- navigation -->
     <header class="site-header">
+        <div class="wrapper">
+            <div class="site-header__logo">
+                <div class="icon site-header__logo__graphic">
+                    <img src="./assets/images/logo/travels-logo-4.png" alt="">
+                    <h1>Madurai Meenakshi Travels</h1>
+                </div>
+            </div>
+            <div class="site-header__menu-content">
+                <nav class="primary-nav primary-nav--pull-right">
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./drop-taxi.html">Drop Taxi</a></li>
+                        <li><a href="./tariff.html">Tariff</a></li>
+                        <li><a class="active-nav" href="./tour.html">Tour Packages</a></li>
+                        <li><a href="./destination.html">Destination</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+    <!-- hero -->
+    <div class="large-hero">
+        <picture>
+            <img class="large-hero__image" src="assets/images/banner/tours.jpg" alt="kanyakumari ">
+        </picture>
+            
+        <div class="large-hero__text-content">
             <div class="wrapper">
-                <div class="site-header__logo">
-                    <div class="icon site-header__logo__graphic">
-                        <img src="./assets/images/logo/travels-logo-4.png" alt="">
-                        <h1>Madurai Meenakshi Travels</h1>
-                    </div>
-                </div>
-                <div class="site-header__menu-content">
-                    <nav class="primary-nav primary-nav--pull-right">
-                        <ul>
-                            <li><a href="./">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a class="active-nav" href="./tour.html">Tour Packages</a></li>
-                            <li><a href="./destination.html">Destination</a></li>
-                            <li><a href="./tariff.html">Tariff</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-            
-        <!-- hero -->
-        <div class="large-hero">
-            <picture>
-                <img class="large-hero__image" src="assets/images/kanyakumari-hero-banner.jpg" alt="kanyakumari ">
-            </picture>
+                <h2 class="large-hero__title">Tour Packages</h2>
+                <h3 class="large-hero__subtitle"></h3>
+            </div>      
+        </div>
+        </div> 
+    </div>
+
+    <div class="section tour-container">
+    <div class="row ">
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-pamban-bridge.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
+                <h4>Madurai-Rameswaram-KanyaKumari</h4>
+            </div>    
+            <div class="tour__text-container">
                 
-            <div class="large-hero__text-content">
-                <div class="wrapper">
-                    <h2 class="large-hero__title">kanyakumari</h2>
-                    <h3 class="large-hero__subtitle"></h3>
-                </div>      
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
             </div>
-            </div> 
         </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/coakerswalk-kodaikanal-afternoon.jpg"alt="">
+                <img class="tour-image slide-2" src="./assets/images/slider/pillar-rock-kodaikanal-morning-fullview-green.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/thirumalainayakar-mahal-madurai-night.jpg" alt="">                       
+                <h4>Madurai-Kodaikanal</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/thanjavur-temple-night.jpg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/slider/thirumalainayakar-mahal-madurai-day-pillar-view.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/thanjavur-temple-inside.jpg" alt="">
+                <h4>Madurai-Trichy-Tanjore </h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/slider/trichy-rockfort.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/gandhi-museum-madurai-frontview.jpg" alt="">                       
+                <h4>Madurai-Trichy-Palani</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/mullaiperiyar-dam-thekkady.jpeg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/slider/munnar-tea-plantations.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/periyar-wildlife-sanctuary-thekkady.jpg" alt="">
+                <h4>Madurai-Thekkady-Munnar</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/mariamman-theppakulam-day-madurai.png" alt="">
+                <img class="tour-image slide-2" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/madurai-meenakshi-amman-temple.jpg" alt="">                       
+                <h4>Madurai-Palani Packages</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/slider/rameshwaram-pamban-palam.jpg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/destinations/kanyakumari-vivekanadarrock-day.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/slider/azhagar-kovil-madurai.jpg" alt="">
+                <h4>Madurai-Rameswaram-Kanyakumari-Trivandrum</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 tour">
+            <div class="tour__image-container">
+                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
+                <h4>Waterfalls Tour-Madurai-Coimbatore</h4>
+            </div>    
+            <div class="tour__text-container">
+                
+                <div class="tour__text-container__details">
+                    <p>4 Days 3 Nights</p>
+                    <a href=""><button class="learn-more">Learn More</button></a>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-pamban-bridge.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
-                    <h4>Madurai-Rameswaram-KanyaKumari</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
+    <footer>
+        <div class="row footer-row">
+            <div class="col-md-3-large">
+                <img src="" alt="">
+                <p></p>
+                <h6>About Us</h6>
+                <p>We are a professional tour and travel operators in Madurai. We also provide car rentals across South India. We provide a friendly service with good hospitality. Kindly contact us for a wonderful travel experience.<br>We always guarantee a memorable and happy trip. We have well maintained cars with friendly drivers. We are awaiting to serve you.</p>
             </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/coakerswalk-kodaikanal-afternoon.jpg"alt="">
-                    <img class="tour-image slide-2" src="./assets/images/slider/pillar-rock-kodaikanal-morning-fullview-green.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/thirumalainayakar-mahal-madurai-night.jpg" alt="">                       
-                    <h4>Madurai-Kodaikanal</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
+            <div class="col-md-3-small">
+                <h6>Our Services</h6>
+                <ul>
+                    <li>Car Rentals</li>
+                    <li>Tour Packages</li>
+                    <li>Booking Services</li>
+                    <li>Hotel Bookings</li>
+                </ul>
             </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/thanjavur-temple-night.jpg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/slider/thirumalainayakar-mahal-madurai-day-pillar-view.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/thanjavur-temple-inside.jpg" alt="">
-                    <h4>Madurai-Trichy-Tanjore </h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
+            <div class="col-md-3-small">
+                <h6>Quick Link</h6>
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Tour Packages</li></a>
+                    <a href=""><li>Destinations</li></a>
+                    <a href=""><li>Tariff</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
             </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/slider/trichy-rockfort.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/gandhi-museum-madurai-frontview.jpg" alt="">                       
-                    <h4>Madurai-Trichy-Palani</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/mullaiperiyar-dam-thekkady.jpeg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/slider/munnar-tea-plantations.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/periyar-wildlife-sanctuary-thekkady.jpg" alt="">
-                    <h4>Madurai-Thekkady-Munnar</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/mariamman-theppakulam-day-madurai.png" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/madurai-meenakshi-amman-temple.jpg" alt="">                       
-                    <h4>Madurai-Palani Packages</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
+            <div class="col-md-3-small">
+                <h6>Contact Info</h6>
+                <p><strong> Address :</strong><br> West Veli Street, <br>
+                        Behind Royal Court, <br>
+                        Madurai – 625001.</p>
+                <p><strong>Phone : <br>
+                    <a href="tel:+918667459121">8667459121</a> ,<br>
+                    <a href="tel:+918681894167">8681894167</a>
+                </strong>
+                    <!-- 8220487369, 8778329170 --></p>
+                
+                <p><strong>Mail Us : </strong>
+                    <!-- info@.com --></p>
+                
             </div>
             
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/slider/rameshwaram-pamban-palam.jpg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/destinations/kanyakumari-vivekanadarrock-day.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/slider/azhagar-kovil-madurai.jpg" alt="">
-                    <h4>Madurai-Rameswaram-Kanyakumari-Trivandrum</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="col-md-4 tour">
-                <div class="tour__image-container">
-                    <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                    <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                    <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
-                    <h4>Waterfalls Tour-Madurai-Coimbatore</h4>
-                </div>    
-                <div class="tour__text-container">
-                    
-                    <div class="tour__text-container__details">
-                        <p>4 Days 3 Nights</p>
-                        <a href=""><button class="learn-more">Learn More</button></a>
-                    </div>                    
-                </div>
-            </div>
-
         </div>
+        <div class="copyright">
+            &copy; 2019 <span>Sri Madurai Meenakshi Tours and Travels.</span> All Right Reserved.
+        </div>
+    </footer>
+    <div class="callus-logo">
+        <a href="tel:+918667459121">
+            <img class="phonecall" src="assets/images/logo/call.png" alt=""><br>
+            Click to Call 
+        </a>
+        <span>or</span> 
+        <a href="https://wa.me/918667459121" target="_blank">
+            <img class="whatsapp" src="assets/images/logo/whatsapp-full.png" alt="">
+        </a>
+    </div>
         <script src="assets/scripts/slider.js"></script>
 </body>
 </html>

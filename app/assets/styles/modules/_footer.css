@@ -43,9 +43,13 @@ footer {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAABCAYAAABOrTWvAAAAGXRFW…RBVHjaYnR3d//PAAGMQAxm79ixg9HDw2NUfFR80IgDBBgAvfWN1mHQu4wAAAAASUVORK5CYII=) 0 100% repeat-x;
         padding-left:5%;
         margin: 0px 0px 5px 0px;
+        list-style-type: none;
     }
     a li {
         color: #FFF;
+    }
+    a {
+        color: #ffc61a;
     }
 }
 
@@ -64,3 +68,4 @@ footer {
     }
 
 }
+

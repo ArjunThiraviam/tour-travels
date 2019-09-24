@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    display: block;
+    font-family: "Lato",Helvetica,Arial,sans-serif; 
+    /* display: block; */
 }
 a {
     text-decoration: none;

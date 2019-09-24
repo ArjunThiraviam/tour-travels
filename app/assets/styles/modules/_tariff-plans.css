@@ -53,3 +53,9 @@
 .car-image img{
     max-height: 150px;
 }
+.traiff-container-head > div.kilo-rental {
+    background-color: #317900;
+}
+.traiff-container-head > div.day-rental {
+    background-color: #1976a1;
+}

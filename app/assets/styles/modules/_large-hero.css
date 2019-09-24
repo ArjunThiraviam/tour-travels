@@ -7,19 +7,25 @@
 .large-hero {
     position: relative;
 }
-.tariff .large-hero__text-content{
+.large-hero__text-content{
     position: absolute;
     top: 50%;
     left: 50%;
     color: #ffc61a;
     font-size: 62px;
+    text-align: center;
     transform: translateY(-48%) translateX(-50%);
     text-transform: uppercase;
 }
-.large-hero.tariff {
+.large-hero {
     background-color: #000;
 }
 
-.tariff .large-hero__image {
+.homepage .large-hero__image {
+    opacity: 1;
+}
+
+.large-hero__image {
     opacity: .5;
+    display: block;
 }
