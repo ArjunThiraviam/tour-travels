@@ -19,3 +19,8 @@
     max-width: 1080px;
     margin: auto;
 }
+
+#choose .car-image {
+    max-width: 80%;
+    flex: right;
+}

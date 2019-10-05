@@ -3,10 +3,12 @@
 @import 'base/_base';
 @import 'modules/_row';
 @import 'modules/_call-us';
+@import 'modules/_contacts';
 @import 'modules/_choose';
 @import 'modules/_section';
 @import 'modules/_container';
 @import 'modules/_site-header';
+@import 'modules/_service';
 @import 'modules/_primary-nav';
 @import 'modules/_large-hero';
 @import 'modules/_tours';

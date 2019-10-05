@@ -7,3 +7,6 @@
 .container-large {
     max-width: unset;
 }
+.destination-container {
+    background-color: #efefef;
+}
