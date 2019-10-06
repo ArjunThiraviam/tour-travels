@@ -1,8 +1,9 @@
 .primary-nav {    
     padding-top: 10px;
+    max-width: 100%;
 
     @mixin atMedium {
-        padding-top: 0px;
+        padding-top: 10px;
     }
 
     &--pull-right {
@@ -28,6 +29,7 @@
         padding-right: 7px;
         font-weight: 700;
         padding-left: 10px;
+        max-width: 100%;
 
         @mixin atMedium {
             float: left;
@@ -55,6 +57,7 @@
         font-size: .8em;
         display: block;
         padding: 5px 8px;
+        max-width: 300px;
 
         @mixin atMedium{
             font-size: 1em;

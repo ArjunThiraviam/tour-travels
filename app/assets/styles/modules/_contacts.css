@@ -12,3 +12,111 @@
 .click-to img {
     max-width: 100%;
 }
+
+
+.social-big li {
+    list-style: none;
+    min-width: 50px;
+    min-height: 50px;
+
+}
+
+.social-big li a.fa::before {
+    font-size: 30px;
+}
+
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter{
+    color: #1da1f2;
+}
+
+.fa-instagram{
+    color: #985538;
+}
+.fa-youtube{
+    color: #c4302b;
+}
+
+.fa-google {
+    color: #EA4335;
+}
+
+.social-big {
+    display: flex;
+    padding: 10px;
+}
+
+.social-big a {
+    text-align: center;
+    width: 40px;
+    height: 40x;
+    line-height: 40px;
+}
+
+.social-big a:hover {
+    background-color: #1976a1;
+    width: 40px;
+    height: 42px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff !important;
+}
+
+h6 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.click-to {
+    background-color: #ccc;
+    border-radius: 15px;
+    height: 180px;    
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.click-to img{
+    max-height: 100px;
+    /* background-color: #ccc; */
+    border-radius: 15px;
+    /* max-height: 200px; */
+    transition: all .3 ease-out;
+}
+.click-link p {
+    text-align: center;
+    display: block;
+    padding: 10px 0px 0px 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+}
+
+.click-link:hover .click-to {
+    background-color: #000;
+}
+.click-link:hover img {
+    transform: scale(1.1);
+}
+
+.call-whatsapp {
+    color: #317900;
+}
+
+.call-text {
+    color: #1976a1
+}
+
+.click-link:hover .call-whatsapp {
+    color: #000;
+    font-size: 18px;
+}
+
+.click-link:hover .call-text {
+    color: #000;
+    font-size: 18px;
+}

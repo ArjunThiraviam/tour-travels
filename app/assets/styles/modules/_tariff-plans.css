@@ -1,50 +1,106 @@
 .traiff-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    /* width: 268px; */
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #efefef;
+    width: 90%;
+    max-width: 280px;
+    box-shadow: 1px 2px 2px 1px rgba(204,204,204,0.75);
+    border: 6px solid #fff;
 
+    @mixin atSmall {
+    width: 40%;
+    margin: 0px 5% 25px;
+    max-width: 280px;
+    }
+    @mixin atMedium {
+        flex-direction: row;
+        width: unset;
+        margin: auto;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        background-color: #fff;
+        max-width: unset;
+        box-shadow: 0px;
+        border: 0px solid #fff;
+    }
 }
 .traiff-container-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 5px;
-    text-align: center;
+    display: none;
+    @mixin atMedium {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
 
 }
 .traiff-container-head .car-image {
     font-size: 32px;
     min-width: 250px;
+    margin-bottom: 10px;
+    @mixin atMedium {
+        margin-bottom: 0px;
+    }
 }
 
 .traiff-container > div, .traiff-container-head > div{
-    width: 18%;
     height: auto;
-    color: #fff;
-    text-align: center;
-    border-right: 2px solid #fff;
-    border-left: 2px solid #fff;
-    /* border-top: 20px solid #fff;
-    border-bottom: 20px solid #fff; */
-    min-height: 100px;
-    height: 100%;
-    min-height: 156px;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
-    background-color: #373737;
+    width: 92%;
+    margin-left: 20px;
+    font-size: 14px;
+
+    @mixin atMedium {
+        align-items: center;
+        width: 18%;
+        font-size: 16px;
+        min-height: 100px;
+        height: 100%;
+        min-height: 156px;        
+        color: #fff;
+        text-align: center;
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        background-color: #373737;
+        margin-left: 0px;
+    }
+}
+
+.traiff-container > div > div:first-of-type {
+    margin-bottom: 5px;
+}
+.traiff-container > div {
+    margin-bottom: 5px;
+    @mixin atMedium {
+        margin-bottom: 0px;
+    }
 }
 .traiff-container-head > div {
     min-height: 86px;
     background-color: #000;
 }
 .traiff-container .car-image {
-    width: 28%;
-    background-color: #fff;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    @mixin atMedium {
+        width: 28%;
+        background-color: #fff;
+        margin-bottom: 0px;
+    }
 } 
 .traiff-container-head .car-image {
     width: 28%;
