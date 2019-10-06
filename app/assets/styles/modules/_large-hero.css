@@ -6,16 +6,22 @@
 }
 .large-hero {
     position: relative;
+    top: -62px;
 }
 .large-hero__text-content{
     position: absolute;
     top: 50%;
     left: 50%;
     color: #ffc61a;
-    font-size: 62px;
+    
+    font-size: 32px;
     text-align: center;
     transform: translateY(-48%) translateX(-50%);
     text-transform: uppercase;
+   
+    @mixin atMedium {
+        font-size: 62px;
+    }
 }
 .large-hero {
     background-color: #000;

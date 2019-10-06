@@ -8,10 +8,8 @@
     background-color: #efefef;
 }
 .destinations {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.tour-container {
+    max-width: 1600px;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }

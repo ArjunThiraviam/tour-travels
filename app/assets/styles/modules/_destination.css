@@ -2,6 +2,7 @@
 
     &__text {
         padding:5%; 
+        background-color: #fff;
         & h3 {
             font-size: 44px;
             text-transform: none;

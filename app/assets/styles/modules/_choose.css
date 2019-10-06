@@ -1,11 +1,11 @@
 .choose__image-container img {
     width: 80px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 #choose h2 {
     font-size: 36px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 #choose h3 {
     font-size: 26px;
@@ -13,9 +13,22 @@
 }
 #choose h6 {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #choose .row {
     max-width: 1080px;
     margin: auto;
+}
+
+#choose .car-image {
+    display: none;
+    @mixin atMedium {
+        display: block;
+        transform: rotate(90deg) translateY(50%) scale(1.25);
+        width: 325px;
+        height: 300px;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+    }
 }

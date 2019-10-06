@@ -1,8 +1,8 @@
 .callus-logo {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     max-width: 80px;
-    left: 20px;
+    right: 10px;
     text-align: center;
     font-weight: 700;
     background-color: rgba(0,0,0,0.7);
