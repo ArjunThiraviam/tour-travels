@@ -1,0 +1,21 @@
+#local-places {
+    max-width: 1020px;
+    margin: auto;
+}
+.slick-slide {
+    /* background-color: #555; */
+
+}
+.slick-slide img {
+    margin: auto;
+    max-height: 460px !important;
+}
+
+#local-places  h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.slick-arrow {
+    display: none !important;
+}

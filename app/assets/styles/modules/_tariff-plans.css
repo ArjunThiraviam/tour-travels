@@ -29,6 +29,7 @@
         max-width: unset;
         box-shadow: 0px;
         border: 0px solid #fff;
+        box-shadow: 0px 0px 0px 0px rgba(204,204,204,0.75);
     }
 }
 .traiff-container-head {
@@ -81,7 +82,10 @@
 }
 
 .traiff-container > div > div:first-of-type {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    @mixin atMedium {
+        margin-bottom: 5px;
+    }
 }
 .traiff-container > div {
     margin-bottom: 5px;
@@ -108,10 +112,35 @@
 } 
 .car-image img{
     max-height: 150px;
+    @mixin atMedium {
+        max-height: 120px;
+    }
+
 }
 .traiff-container-head > div.kilo-rental {
     background-color: #317900;
 }
 .traiff-container-head > div.day-rental {
     background-color: #1976a1;
+}
+
+.car-name{
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    @mixin atMedium {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+}
+
+.traiff-container div span {
+    display: block;
+    font-weight: 700;
+    @mixin atMedium {
+        display: none;
+    }
 }

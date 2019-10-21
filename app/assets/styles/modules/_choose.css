@@ -3,9 +3,15 @@
     margin: auto;
     margin-bottom: 5px;
 }
+
+#choose {
+    background-color: #fff;
+}
+
 #choose h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 #choose h3 {
     font-size: 26px;

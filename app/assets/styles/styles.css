@@ -6,12 +6,14 @@
 @import 'modules/_contacts';
 @import 'modules/_choose';
 @import 'modules/_section';
+@import 'modules/_about';
 @import 'modules/_container';
 @import 'modules/_site-header';
 @import 'modules/_service';
 @import 'modules/_primary-nav';
 @import 'modules/_large-hero';
 @import 'modules/_tours';
+@import 'modules/_slick-carousel.css';
 @import 'modules/_destination';
 @import 'modules/_tariff-plans';
 @import 'modules/_footer';

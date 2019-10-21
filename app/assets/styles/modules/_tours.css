@@ -55,9 +55,11 @@
 
         &__details {
             display: flex;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             padding: 30px 8px 0px 8px;
             align-items: center;
+            justify-content: center;
+            padding: 10px 8px 0px 8px;
             p {
                 display: flex;
                 line-height: 1.2;
@@ -107,9 +109,11 @@
     } */
 }
 .tour-container {
-    max-width: 1280px;
+    max-width: 1180px;
     margin: auto;
-    margin-top: 50px;
     margin-bottom: 50px;
+    @mixin atLarge {
+        max-width: 1280px;
+    }
     
 }

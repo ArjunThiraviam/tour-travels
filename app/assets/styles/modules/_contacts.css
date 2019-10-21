@@ -72,7 +72,7 @@ h6 {
 }
 
 .click-to {
-    background-color: #ccc;
+    background-color: #333;
     border-radius: 15px;
     height: 180px;    
     width: 200px;
@@ -97,26 +97,29 @@ h6 {
 }
 
 .click-link:hover .click-to {
-    background-color: #000;
+    background-color: #1976a1;
+}
+.click-link-whatsapp:hover .click-to {
+    background-color: #317900;
 }
 .click-link:hover img {
     transform: scale(1.1);
 }
 
 .call-whatsapp {
-    color: #317900;
+    color: #000;
 }
 
 .call-text {
-    color: #1976a1
+    color: #000;
 }
 
 .click-link:hover .call-whatsapp {
-    color: #000;
+    color: #317900;
     font-size: 18px;
 }
 
 .click-link:hover .call-text {
-    color: #000;
+    color: #1976a1;
     font-size: 18px;
 }

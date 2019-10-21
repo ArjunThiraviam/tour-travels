@@ -1,0 +1,17 @@
+.about-us {
+    border: 15px solid #ffc61a;
+    margin-bottom: 50px;
+}
+.about-us p {
+    padding: 25px 7% 10px 7%;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.hide-mobile {
+    display: none;
+    @mixin atMedium {
+        display: block;
+    }
+}

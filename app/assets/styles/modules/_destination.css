@@ -19,7 +19,11 @@
     }
     &__image {
         position: relative;
-        height: 400px;
+        height: 260px;
+        @mixin atSmall {
+            height: 400px;
+        }
+
     }
 
     &__image img{
@@ -29,6 +33,10 @@
         opacity: 0;
         transition: 1s ease-out;
         left: 0;
+        height: 260px;
+        @mixin atSmall {
+            height: 400px;
+        }
     }
     &__image img.show {
         opacity:  1;
@@ -60,4 +68,17 @@ button:hover{
     background: #d9eef7;
     border: 1px solid #1976a1;
     color: #1976a1;
+}
+
+.destinations {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: -65px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+    @mixin atMedium {
+        margin-top: -62px;
+        margin-bottom: 0px;
+    }
 }
