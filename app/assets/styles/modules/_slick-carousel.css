@@ -19,3 +19,31 @@
 .slick-arrow {
     display: none !important;
 }
+
+.slick-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slick-slide p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 800;
+    height: 94%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 6%;
+    border: 5px solid #fff;
+    line-height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slick-slide img {
+    background-color: rgba(0,0,0,0.25);
+}

@@ -58,12 +58,13 @@
         display: block;
         padding: 5px 8px;
         max-width: 300px;
+        visibility: hidden;
 
         @mixin atMedium{
             font-size: 1em;
             padding: 12px 0px;
             background-color: transparent;
-
+            visibility: visible;
             &.is-current-link {
                 /* color: $mainOrange; */
             }

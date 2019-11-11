@@ -96,6 +96,9 @@
             z-index: 1;
             opacity: 1;
             transform: scale(1);
+            & .primary-nav a {
+                visibility: visible;
+            }
         }
     }
 
