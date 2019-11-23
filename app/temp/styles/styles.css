@@ -1445,6 +1445,8 @@ h6 {
     width: 100%;
     border-spacing: 0px;
     font-family: 'Caveat Brush', cursive;
+
+
 }
 
 .drop-taxi figure {
@@ -1466,7 +1468,7 @@ h6 {
             opacity: .75;
             display: block;
             height: 100%;
-            height: 120px;
+            height: 150px;
         }
 
 .drop-taxi figure figcaption {
@@ -1478,7 +1480,7 @@ h6 {
             transform: translate(-50%, -50%);
             color: #fff;
             max-width: 100%;
-            font-size: 36px;
+            font-size: 28px;
             letter-spacing: 2px;
             display: inline-block;
             text-shadow: 4px 4px 2px #000000;
@@ -1488,54 +1490,58 @@ h6 {
 .drop-taxi figure figcaption span {
                 font-family: 'Caveat Brush', cursive;
                 text-shadow: 3px 3px 1px #000000;
-                font-size: 22px;
+                font-size: 18px;
                 display: block;
             }
 
-.drop-taxi th {
+@media (min-width: 530px) {
+
+.drop-taxi figure figcaption span {
+                    font-size: 22px
+            }
+    }
+
+@media (min-width: 900px) {
+
+.drop-taxi figure figcaption span {
+                    font-size: 24px
+            }
+    }
+
+@media (min-width: 530px) {
+
+.drop-taxi figure figcaption {
+                font-size: 32px
+        }
+    }
+
+@media (min-width: 900px) {
+
+.drop-taxi figure figcaption {
+                font-size: 42px
+        }
+    }
+
+.drop-taxi .estimate-box.top-box {
         background-color: #ffc61a;
         padding: 15px;
-        color: #000;
+        color: #333;
         font-size: 26px;
         font-family: 'Quicksand', sans-serif;
         /* font-family: 'Caveat Brush', cursive; */
         font-weight: 900;
     }
 
-.drop-taxi td:first-child {
-        width: 40%;
-    }
-
-.drop-taxi td {
-        padding: 15px 10px;
-        /* max-width: 250px; */
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1px;
-        font-size: 24px;
-        color: #333;
-    }
-
-.drop-taxi tr:nth-child(2n) {
-        background-color: #e7e7e7;
-    }
-
-.drop-taxi tr:nth-child(2n+1) {
-        background-color: #f7f7f8;
-    }
-
-.drop-taxi tr:first-child {
-        background-color: #7bc7ce;
-        border: 0px;
-        color: #fff;
-    }
-
-.drop-taxi tr:first-child th {
-            color: #fff;
+.drop-taxi .estimate-box.top-box .estimate-dest-container {
+            font-family: 'Quicksand', sans-serif;
         }
 
 .drop-taxi-page {
     /* background-color: #b1ced4; */
+}
+
+.drop-taxi-table-container {
+    /* overflow: scroll; */
 }
 
 .drop-taxi-heading {
@@ -1584,6 +1590,107 @@ h6 {
             margin-left: 20px;
             list-style-position: inside;
         }
+
+.estimate-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+@media (min-width: 900px) {
+
+.estimate-box {
+        flex-direction: row
+}
+    }
+
+.estimate-dest-container {
+    width: 40%;
+    min-width: 320px;
+    padding: 15px 10px;
+    margin: auto;
+}
+
+.details-container {
+    display: flex;
+    
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #333;
+}
+
+@media (min-width: 900px) {
+
+.details-container {
+        width: 60%
+}
+    }
+
+.details-container div {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.estimate-box:nth-child(2n) {
+    background-color: #e7e7e7;
+}
+
+.estimate-box:nth-child(2n+1) {
+    background-color: #f7f7f8;
+}
+
+.drop-taxi-price {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin:  10px auto 50px auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.drop-taxi-price h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.drop-taxi-price h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #111;
+    line-height: 1;
+    font-weight: 900;
+    font-family: 'Caveat Brush', cursive;
+    
+}
+
+.drop-taxi-price h6 span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.drop-taxi-price > div {
+    width: 40%;
+    margin: auto;
+}
+
+.drop-taxi-price > div  img {
+    width: 100%;
+}
+
+.drop-taxi-main-heading {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;;
+}
+
+.drop-taxi-price-container {
+    width: 90%;
+    margin: auto;
+}
 
 #local-places {
     max-width: 1020px;
