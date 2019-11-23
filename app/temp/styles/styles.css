@@ -1310,11 +1310,11 @@ h6 {
     position: relative;
     border: 5px solid #fff;
     width: 80%;
-    margin: 1% 10% 1% 10%;
+    /* margin: 1% 10% 1% 10%; */
     margin: auto;
     margin-bottom: 20px;
     padding: 1%;
-    max-width: 320px;
+    /* max-width: 320px; */
     
     box-shadow: 1px 2px 2px 1px rgba(204,204,204,0.75);
 
@@ -1333,17 +1333,17 @@ h6 {
 @media (min-width: 530px) {
 
 .tour {
-        width: 48%;
-        margin: 1% 1% 1% 1%
+        /* width: 48%; */
+        /* margin: 1% 1% 1% 1%; */
 }
     }
 
 @media (min-width: 900px) {
 
 .tour {
-        width: 31%;
-        margin: 1% 1% 1% 1%;
-        max-width: unset
+        /* width: 31%; */
+        /* margin: 1% 1% 1% 1%; */
+        /* max-width: unset; */
 }
     }
 
@@ -1455,6 +1455,10 @@ h6 {
 
 
 }
+
+.drop-taxi h2 {
+        max-width: 1200px;
+    }
 
 .drop-taxi figure {
         position: relative;
@@ -1785,6 +1789,18 @@ h6 {
     font-size: 52px;
     color:#fff;
 }
+
+.other-destinations-call {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.other-destinations-call a {
+        color: #ffc61a;
+    }
 
 #local-places {
     max-width: 1020px;

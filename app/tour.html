@@ -58,129 +58,95 @@
     </div>
 
     <div class="section tour-container">
-    <div class="row row-left">
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-pamban-bridge.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
-                <h4>Madurai-Rameswaram-KanyaKumari</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
+        <div class="row ">
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('oneD')"> One Day</button>
+                <button class="btn" onclick="filterSelection('twoD')"> Two Days</button>
+                <button class="btn" onclick="filterSelection('threeD')"> Three Days</button>
+                <button class="btn" onclick="filterSelection('fourD')"> Four Days</button>
             </div>
         </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/coakerswalk-kodaikanal-afternoon.jpg"alt="">
-                <img class="tour-image slide-2" src="./assets/images/slider/pillar-rock-kodaikanal-morning-fullview-green.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/thirumalainayakar-mahal-madurai-night.jpg" alt="">                       
-                <h4>Madurai-Kodaikanal</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
+        <div class="row">
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="t-container">
+                <div class="filterDiv oneD">Madurai</div>
+                <div class="filterDiv oneD">
+                        <div class="tour">
+                            <div class="tour__image-container">
+                                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                                <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-pamban-bridge.jpg" alt="">
+                                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
+                                <h4>Rameswaram</h4>
+                            </div>    
+                            <div class="tour__text-container">                                
+                                <div class="tour__text-container__details">
+                                    <p>1 Day</p>
+                                </div>                    
+                            </div>
+                        </div>                    
+                </div>
+                <div class="filterDiv oneD">
+                    <div class="tour">
+                            <div class="tour__image-container">
+                                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
+                                <img class="tour-image slide-2" src="./assets/images/destinations/kanyakumari-vivekanadarrock-day.jpg" alt="">
+                                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-temple.jpg" alt="">
+                                <h4>Kanyakumari</h4>
+                            </div>    
+                            <div class="tour__text-container">
+                                <div class="tour__text-container__details">
+                                    <p>1 Day</p>
+                                </div>                    
+                            </div>
+                        </div>
+                </div>
+                <div class="filterDiv oneD">
+                        <div class="tour">
+                                <div class="tour__image-container">
+                                    <img class="tour-image slide-1" src="./assets/images/slider/coakerswalk-kodaikanal-afternoon.jpg"alt="">
+                                    <img class="tour-image slide-2" src="./assets/images/slider/pillar-rock-kodaikanal-morning-fullview-green.jpg" alt="">
+                                    <img class="tour-image slide-3" src="./assets/images/slider/thirumalainayakar-mahal-madurai-night.jpg" alt="">                       
+                                    <h4>Kodaikanal</h4>
+                                </div>    
+                                <div class="tour__text-container">
+                                    <div class="tour__text-container__details">
+                                        <p>1 Day</p>
+                                    </div>                    
+                                </div>
+                            </div>
+                </div>
+                <div class="filterDiv oneD">Thekkady</div>
+                <div class="filterDiv oneD">Trichy</div>
+                <div class="filterDiv oneD">Tanjavur</div>
+                <div class="filterDiv oneD">Munnar</div>
+                <div class="filterDiv oneD">Ooty</div>
+                <div class="filterDiv oneD">Palani</div>
+
+                <div class="filterDiv twoD">Madurai Rameshwaram</div>
+                <div class="filterDiv twoD">Madurai Munnar</div>
+                <div class="filterDiv twoD">Madurai Kanyakumari</div>
+                <div class="filterDiv twoD">Madurai Kodaikanal</div>
+                <div class="filterDiv twoD">Madurai Thekkady</div>
+                <div class="filterDiv twoD">Madurai Trichy</div>
+                <div class="filterDiv twoD">Madurai Tanjavur</div>
+                <div class="filterDiv twoD">Madurai Ooty</div>
+
+                <div class="filterDiv threeD">Madurai Rameshwaram Kanyakumari</div>
+                <div class="filterDiv threeD">Madurai Rameshwaram Kodaikanal</div>
+                <div class="filterDiv threeD">Madurai Kanyakumari Thiruvananthapuram</div>
+                <div class="filterDiv threeD">Madurai Kodaikanal Trichy Tanjavur</div>
+                <div class="filterDiv threeD">Madurai Kodaikanal Ooty</div>
+                <div class="filterDiv threeD">Madurai Munnar Thekkady</div>
+
+                <div class="filterDiv fourD">Madurai Rameshwaram Kanyakumari Kodaikanal</div>
+                <div class="filterDiv fourD">Madurai Rameshwaram Kanyakumari Thiruvananthapuram</div>
+                <div class="filterDiv fourD">Madurai Trichy Tanjavur Rameshwaram Kanyakumari</div>
+                <div class="filterDiv fourD">Madurai Munnar Kodaikanal Ooty</div>
+                <div class="filterDiv fourD">Madurai Trichy Palani Kodaikanal Tanjavur</div>
             </div>
         </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/thanjavur-temple-night.jpg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/slider/thirumalainayakar-mahal-madurai-day-pillar-view.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/thanjavur-temple-inside.jpg" alt="">
-                <h4>Madurai-Trichy-Tanjore </h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/slider/trichy-rockfort.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/gandhi-museum-madurai-frontview.jpg" alt="">                       
-                <h4>Madurai-Trichy-Palani</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/mullaiperiyar-dam-thekkady.jpeg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/slider/munnar-tea-plantations.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/periyar-wildlife-sanctuary-thekkady.jpg" alt="">
-                <h4>Madurai-Thekkady-Munnar</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/mariamman-theppakulam-day-madurai.png" alt="">
-                <img class="tour-image slide-2" src="./assets/images/slider/palani-murugan-temple-hills-night.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/madurai-meenakshi-amman-temple.jpg" alt="">                       
-                <h4>Madurai-Palani Packages</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-        
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/slider/rameshwaram-pamban-palam.jpg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/destinations/kanyakumari-vivekanadarrock-day.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/slider/azhagar-kovil-madurai.jpg" alt="">
-                <h4>Madurai-Rameswaram-Kanyakumari-Trivandrum</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-        <div class="col-md-4 tour">
-            <div class="tour__image-container">
-                <img class="tour-image slide-1" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                <img class="tour-image slide-2" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">
-                <img class="tour-image slide-3" src="./assets/images/destinations/rameshwaram-shore-tip.jpg" alt="">                       
-                <h4>Waterfalls Tour-Madurai-Coimbatore</h4>
-            </div>    
-            <div class="tour__text-container">
-                
-                <div class="tour__text-container__details">
-                    <p>4 Days 3 Nights</p>
-                    <!--<a href=""><button class="learn-more">Learn More</button></a>-->
-                </div>                    
-            </div>
-        </div>
-    </div>
     </div>
 
     <footer>
@@ -243,5 +209,82 @@
     </div>
         <script src="assets/scripts/slider.js"></script>
         <script src="/temp/scripts/app.js"></script>
+
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current control button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+
+        <style>
+            .filterDiv {
+            display: none; /* Hidden by default */
+            width: 33%;
+            }
+
+            /* The "show" class is added to the filtered elements */
+            .show {
+            display: block;
+            }
+
+
+            /* Add a dark background to the active button */
+            .btn.active {
+            background-color: #666;
+            color: white;
+            }
+
+            .t-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+        </style>
 </body>
 </html>

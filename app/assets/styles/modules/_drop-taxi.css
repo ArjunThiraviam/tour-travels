@@ -7,6 +7,10 @@
     border-spacing: 0px;
     font-family: 'Caveat Brush', cursive;
 
+    h2 {
+        max-width: 1200px;
+    }
+
     & figure {
         position: relative;
         max-width: 100%; 
@@ -285,4 +289,16 @@
     flex-direction: column;
     font-size: 52px;
     color:#fff;
+}
+
+.other-destinations-call {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    a {
+        color: #ffc61a;
+    }
 }
