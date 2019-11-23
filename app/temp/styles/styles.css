@@ -752,6 +752,12 @@ h6 {
     margin-bottom: 5px;
 }
 
+.choose__image.square {
+    border: 5px #ccc solid;
+    width: 100px;
+    border-radius: 20px;
+}
+
 #choose {
     background-color: #fff;
 }
@@ -828,9 +834,10 @@ h6 {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-top: -65px;
 
 }
+
+/* margin-top: -65px; */
 
 @media (min-width: 900px) {
 
@@ -1530,11 +1537,20 @@ h6 {
         font-family: 'Quicksand', sans-serif;
         /* font-family: 'Caveat Brush', cursive; */
         font-weight: 900;
+        display: none;
     }
 
 .drop-taxi .estimate-box.top-box .estimate-dest-container {
             font-family: 'Quicksand', sans-serif;
         }
+
+@media (min-width: 900px) {
+
+.drop-taxi .estimate-box.top-box {
+            font-size: 32px;
+            display: flex
+    }
+    }
 
 .drop-taxi-page {
     /* background-color: #b1ced4; */
@@ -1576,20 +1592,35 @@ h6 {
 .drop-taxi-terms ul {
         border-top: 5px solid #000;
         margin-top: 15px;
-        padding-top: 20px;
-        
-        line-height: 2;
-        font-family: 'Caveat Brush', cursive;
+        padding-top: 20px;        
+        line-height: 1.2;
+    }
+
+/* font-family: 'Caveat Brush', cursive; */
+
+@media (min-width: 900px) {
+
+.drop-taxi-terms ul {
+            line-height: 2
+    }
     }
 
 .drop-taxi-terms ul li {
-            font-family: 'Caveat Brush', cursive;
+            /* font-family: 'Caveat Brush', cursive; */
             font-weight: 400;
-            font-size: 20px;
+            font-size: 14px;
             color: #333;
             margin-left: 20px;
             list-style-position: inside;
+            margin-bottom: 10px;
         }
+
+@media (min-width: 900px) {
+
+.drop-taxi-terms ul li {
+                font-size: 18px
+        }
+    }
 
 .estimate-box {
     display: flex;
@@ -1606,28 +1637,35 @@ h6 {
 
 .estimate-dest-container {
     width: 40%;
-    min-width: 320px;
+    min-width: 280px;
     padding: 15px 10px;
     margin: auto;
 }
 
+@media (min-width: 900px) {
+
+.estimate-dest-container {
+        min-width: 320px
+}
+    }
+
 .details-container {
-    display: flex;
-    
+    display: flex;    
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px 10px;
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size: 16px;
     color: #333;
 }
 
 @media (min-width: 900px) {
 
 .details-container {
-        width: 60%
+        width: 60%;
+        font-size: 24px
 }
     }
 
@@ -1649,7 +1687,15 @@ h6 {
     text-align: center;
     margin:  10px auto 50px auto;
     font-family: 'Quicksand', sans-serif;
+    flex-direction: column;
 }
+
+@media (min-width: 530px) {
+
+.drop-taxi-price {
+        flex-direction: row
+}
+    }
 
 .drop-taxi-price h4 {
     font-family: 'Quicksand', sans-serif;
@@ -1662,6 +1708,7 @@ h6 {
     font-size: 20px;
     color: #111;
     line-height: 1;
+    letter-spacing: 1px;
     font-weight: 900;
     font-family: 'Caveat Brush', cursive;
     
@@ -1673,9 +1720,17 @@ h6 {
 }
 
 .drop-taxi-price > div {
-    width: 40%;
+    width: 80%;
     margin: auto;
 }
+
+@media (min-width: 530px) {
+
+.drop-taxi-price > div {
+        width: 40%;
+        margin: auto
+}
+    }
 
 .drop-taxi-price > div  img {
     width: 100%;
@@ -1690,6 +1745,45 @@ h6 {
 .drop-taxi-price-container {
     width: 90%;
     margin: auto;
+}
+
+.container.drop-taxi-section {
+    max-width: 90%;
+}
+
+.details-container div:nth-of-type(1)::before {
+    content: "Distance";
+    display: block;
+    font-size: 12px;
+}
+
+.details-container div:nth-of-type(2)::before {
+    content: "Sedan";
+    display: block;
+    font-size: 12px;
+}
+
+.details-container div:nth-of-type(3)::before {
+    content: "XUV";
+    display: block;
+    font-size: 12px;
+}
+
+.estimate-box.top-box .details-container div::before{
+    content: "";
+}
+
+.drop-taxi-background {
+    background-image: url("../../assets/images/banner/drop-taxi.jpg");
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 52px;
+    color:#fff;
 }
 
 #local-places {

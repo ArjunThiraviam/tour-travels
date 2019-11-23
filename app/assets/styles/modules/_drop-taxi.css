@@ -68,9 +68,14 @@
         font-family: 'Quicksand', sans-serif;
         /* font-family: 'Caveat Brush', cursive; */
         font-weight: 900;
+        display: none;
 
         & .estimate-dest-container {
             font-family: 'Quicksand', sans-serif;
+        }
+        @mixin atMedium {
+            font-size: 32px;
+            display: flex;
         }
     }
 
@@ -116,17 +121,26 @@
     ul {
         border-top: 5px solid #000;
         margin-top: 15px;
-        padding-top: 20px;
+        padding-top: 20px;        
+        line-height: 1.2;
+        /* font-family: 'Caveat Brush', cursive; */
         
-        line-height: 2;
-        font-family: 'Caveat Brush', cursive;
+        @mixin atMedium {
+            line-height: 2;
+        }
+
         li {
-            font-family: 'Caveat Brush', cursive;
+            /* font-family: 'Caveat Brush', cursive; */
             font-weight: 400;
-            font-size: 20px;
+            font-size: 14px;
             color: #333;
             margin-left: 20px;
             list-style-position: inside;
+            margin-bottom: 10px;
+
+            @mixin atMedium {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -142,24 +156,27 @@
 }
 .estimate-dest-container {
     width: 40%;
-    min-width: 320px;
+    min-width: 280px;
     padding: 15px 10px;
     margin: auto;
+    @mixin atMedium {
+        min-width: 320px;
+    }
 }
 
 .details-container {
-    display: flex;
-    
+    display: flex;    
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px 10px;
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size: 16px;
     color: #333;
     @mixin atMedium {
         width: 60%;
+        font-size: 24px;
     }
 }
 .details-container div {
@@ -180,6 +197,10 @@
     text-align: center;
     margin:  10px auto 50px auto;
     font-family: 'Quicksand', sans-serif;
+    flex-direction: column;
+    @mixin atSmall {
+        flex-direction: row;
+    }
 }
 
 .drop-taxi-price h4 {
@@ -192,6 +213,7 @@
     font-size: 20px;
     color: #111;
     line-height: 1;
+    letter-spacing: 1px;
     font-weight: 900;
     font-family: 'Caveat Brush', cursive;
     
@@ -204,8 +226,12 @@
 
 
 .drop-taxi-price > div {
-    width: 40%;
+    width: 80%;
     margin: auto;
+    @mixin atSmall {
+        width: 40%;
+        margin: auto;
+    }
 }
 .drop-taxi-price > div  img {
     width: 100%;
@@ -219,4 +245,44 @@
 .drop-taxi-price-container {
     width: 90%;
     margin: auto;
+}
+
+.container.drop-taxi-section {
+    max-width: 90%;
+}
+
+.details-container div:nth-of-type(1)::before {
+    content: "Distance";
+    display: block;
+    font-size: 12px;
+}
+
+.details-container div:nth-of-type(2)::before {
+    content: "Sedan";
+    display: block;
+    font-size: 12px;
+}
+
+.details-container div:nth-of-type(3)::before {
+    content: "XUV";
+    display: block;
+    font-size: 12px;
+}
+
+.estimate-box.top-box .details-container div::before{
+    content: "";
+}
+
+
+.drop-taxi-background {
+    background-image: url("../../assets/images/banner/drop-taxi.jpg");
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 52px;
+    color:#fff;
 }

@@ -4,6 +4,12 @@
     margin-bottom: 5px;
 }
 
+.choose__image.square {
+    border: 5px #ccc solid;
+    width: 100px;
+    border-radius: 20px;
+}
+
 #choose {
     background-color: #fff;
 }

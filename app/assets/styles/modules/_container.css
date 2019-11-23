@@ -3,7 +3,7 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-top: -65px;
+    /* margin-top: -65px; */
     @mixin atMedium {
         margin-top: 0px;
         margin-bottom: 100px;
