@@ -1312,7 +1312,7 @@ h6 {
     width: 80%;
     /* margin: 1% 10% 1% 10%; */
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 1%;
     /* max-width: 320px; */
     
@@ -1351,7 +1351,7 @@ h6 {
         max-width: 100%;
         position: relative;
         overflow: hidden;
-        height: 250px;
+        height: 180px;
     }
 
 .tour__image-container img {
@@ -1442,6 +1442,10 @@ h6 {
         max-width: 1280px
     
 }
+    }
+
+.tour-container #myBtnContainer {
+        margin-bottom: 50px;
     }
 
 .drop-taxi {
