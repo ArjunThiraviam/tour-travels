@@ -375,115 +375,119 @@ a {
     }
 
 .row {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .row-md-rev {
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+                flex-direction: row-reverse;
     }
 
 .row-left {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
 }
 
 .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     width: 100%;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-1 {
     width: 8.33%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-2 {
     width: 16.66%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-3 {
     width: 25%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-3-small {
     width: 20%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-3-large {
     width: 35%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-4 {
     width: 33.33%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-5 {
     width: 41.66%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-6 {
     width: 50%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-7 {
     width: 58.33%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-8 {
     width: 66.33%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-9 {
     width: 75%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-10 {
     width: 83.33%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .col-s-11 {
     width: 91.66%
 }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
     }
 
 @media (min-width: 900px) {
@@ -664,6 +668,7 @@ a {
 }
 
 .social-big {
+    display: -webkit-box;
     display: flex;
     padding: 10px;
 }
@@ -694,9 +699,12 @@ h6 {
     border-radius: 15px;
     height: 180px;    
     width: 200px;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     margin: auto;
 }
 
@@ -705,6 +713,7 @@ h6 {
     /* background-color: #ccc; */
     border-radius: 15px;
     /* max-height: 200px; */
+    -webkit-transition: all .3 ease-out;
     transition: all .3 ease-out;
 }
 
@@ -725,7 +734,8 @@ h6 {
 }
 
 .click-link:hover img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .call-whatsapp {
@@ -775,6 +785,8 @@ h6 {
 
 #choose h6 {
     font-size: 16px;
+    max-width: 80%;
+    margin: auto;
     margin-bottom: 20px;
 }
 
@@ -791,7 +803,8 @@ h6 {
 
 #choose .car-image {
         display: block;
-        transform: rotate(90deg) translateY(50%) scale(1.25);
+        -webkit-transform: rotate(90deg) translateY(50%) scale(1.25);
+                transform: rotate(90deg) translateY(50%) scale(1.25);
         width: 325px;
         height: 300px;
         position: absolute;
@@ -870,9 +883,11 @@ h6 {
 }
 
 .traiff-outer-container {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
     max-width: 680px;
 }
 
@@ -932,8 +947,12 @@ h6 {
             width: 20px;
             height: 3px;
             background-color: #fff;
-            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+                    transform-origin: 0 0;
+            -webkit-transition:  -webkit-transform .3s ease-out;
+            transition:  -webkit-transform .3s ease-out;
             transition:  transform .3s ease-out;
+            transition:  transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
 .site-header__menu-icon__middle {
@@ -943,8 +962,10 @@ h6 {
             width: 20px;
             height: 3px;
             background-color: #fff;
+            -webkit-transition:  all .3s ease-out;
             transition:  all .3s ease-out;
-            transform-origin: 0 50%;
+            -webkit-transform-origin: 0 50%;
+                    transform-origin: 0 50%;
         }
 
 .site-header__menu-icon::after {
@@ -955,8 +976,12 @@ h6 {
             width: 20px;
             height: 3px;
             background-color: #fff;
-            transform-origin: 0 100%;
+            -webkit-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+            -webkit-transition:  -webkit-transform .3s ease-out;
+            transition:  -webkit-transform .3s ease-out;
             transition:  transform .3s ease-out;
+            transition:  transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
 @media (min-width: 900px) {
@@ -968,16 +993,19 @@ h6 {
     }
 
 .site-header__menu-icon--close-x::before {
-            transform: rotate(45deg) scaleX(1.25);
+            -webkit-transform: rotate(45deg) scaleX(1.25);
+                    transform: rotate(45deg) scaleX(1.25);
         }
 
 .site-header__menu-icon--close-x .site-header__menu-icon__middle{
             opacity: 0;
-            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
         }
 
 .site-header__menu-icon--close-x::after {
-            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+            -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
         }
 
 .site-header__menu-content { 
@@ -989,6 +1017,7 @@ h6 {
         width: 100%;
         /* transform: scale(1.2); */
         /* max-width: 70%; */
+        -webkit-transition: all .3s ease-out;
         transition: all .3s ease-out;
     }
 
@@ -999,14 +1028,16 @@ h6 {
             padding-top: 0px;
             z-index: 1;
             opacity: 1;
-            transform: scale(1)
+            -webkit-transform: scale(1);
+                    transform: scale(1)
     }
     }
 
 .site-header__menu-content--is-visible {
             z-index: 1;
             opacity: 1;
-            transform: scale(1);
+            -webkit-transform: scale(1);
+                    transform: scale(1);
         }
 
 .site-header__menu-content--is-visible .primary-nav a {
@@ -1024,8 +1055,10 @@ h6 {
         top: 0px;
         margin-top: -10px;
         margin-left: 50%;
-        transform: translateX(-50%) scale(.7);
-        transform-origin: 50% 0%;
+        -webkit-transform: translateX(-50%) scale(.7);
+                transform: translateX(-50%) scale(.7);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
         z-index: 99;
     }
 
@@ -1033,7 +1066,8 @@ h6 {
 
 .site-header__logo__graphic {
             margin-left: 20px;
-            transform: translateX(0%) scale(1 )
+            -webkit-transform: translateX(0%) scale(1 );
+                    transform: translateX(0%) scale(1 )
     }
     }
 
@@ -1099,8 +1133,12 @@ h6 {
         margin: 0px;
         padding: 0px;
 
+        display: -webkit-box;
+
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
 
 .primary-nav ul::after {
@@ -1156,9 +1194,9 @@ h6 {
         color: #fff;
         text-decoration: none;
         font-weight: 700;
-        font-size: .8em;
+        font-size: 1.2em;
         display: block;
-        padding: 5px 8px;
+        padding: 8px 8px;
         max-width: 300px;
         visibility: hidden;
     }
@@ -1212,11 +1250,12 @@ h6 {
     
     font-size: 30px;
     text-align: center;
-    transform: translateY(-48%) translateX(-50%);
+    -webkit-transform: translateY(-48%) translateX(-50%);
+            transform: translateY(-48%) translateX(-50%);
     text-transform: uppercase;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .large-hero__text-content{
         font-size: 48px
@@ -1241,7 +1280,7 @@ h6 {
     height: 260px;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .large-hero.homepage {
         height: 420px
@@ -1275,11 +1314,12 @@ h6 {
     opacity: 0;
     position: absolute;
     visibility: hidden;
+    -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
     height: 260px;
  }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .heroslide {
         height: 420px
@@ -1330,7 +1370,7 @@ h6 {
     } */
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .tour {
         /* width: 48%; */
@@ -1356,6 +1396,7 @@ h6 {
 
 .tour__image-container img {
             max-width: 100%;
+            -webkit-transition: 1s ease-out;
             transition: 1s ease-out;
             opacity: 0;
             position: absolute;
@@ -1382,19 +1423,24 @@ h6 {
         }
 
 .tour__text-container__details {
+            display: -webkit-box;
             display: flex;
             /* justify-content: space-between; */
             padding: 30px 8px 0px 8px;
-            align-items: center;
-            justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
             padding: 10px 8px 0px 8px;
         }
 
 .tour__text-container__details p {
+                display: -webkit-box;
                 display: flex;
                 line-height: 1.2;
                 margin: 5px 5px;
-                align-items: center;
+                -webkit-box-align: center;
+                        align-items: center;
                 font-weight: 700;
             }
 
@@ -1492,7 +1538,8 @@ h6 {
             font-family: 'Caveat Brush', cursive;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             color: #fff;
             max-width: 100%;
             font-size: 28px;
@@ -1509,7 +1556,7 @@ h6 {
                 display: block;
             }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .drop-taxi figure figcaption span {
                     font-size: 22px
@@ -1523,7 +1570,7 @@ h6 {
             }
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .drop-taxi figure figcaption {
                 font-size: 32px
@@ -1556,6 +1603,7 @@ h6 {
 
 .drop-taxi .estimate-box.top-box {
             font-size: 32px;
+            display: -webkit-box;
             display: flex
     }
     }
@@ -1631,15 +1679,20 @@ h6 {
     }
 
 .estimate-box {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     max-width: 1200px;
 }
 
 @media (min-width: 900px) {
 
 .estimate-box {
-        flex-direction: row
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row
 }
     }
 
@@ -1658,10 +1711,13 @@ h6 {
     }
 
 .details-container {
+    display: -webkit-box;
     display: flex;    
     text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 15px 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1690,18 +1746,24 @@ h6 {
 }
 
 .drop-taxi-price {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     text-align: center;
     margin:  10px auto 50px auto;
     font-family: 'Quicksand', sans-serif;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .drop-taxi-price {
-        flex-direction: row
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row
 }
     }
 
@@ -1732,7 +1794,7 @@ h6 {
     margin: auto;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .drop-taxi-price > div {
         width: 40%;
@@ -1786,10 +1848,15 @@ h6 {
     background-size: cover;
     text-align: center;
     min-height: 400px;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     font-size: 52px;
     color:#fff;
 }
@@ -1833,17 +1900,23 @@ h6 {
 
 .slick-slide {
     position: relative;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 
 }
 
 .slick-slide p {
     position: absolute;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     font-size: 24px;
     color: #FFF;
     font-weight: 800;
@@ -1886,7 +1959,7 @@ h6 {
 
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .destination__image {
             height: 400px
@@ -1899,12 +1972,13 @@ h6 {
         max-height: 400px;
         position: absolute;
         opacity: 0;
+        -webkit-transition: 1s ease-out;
         transition: 1s ease-out;
         left: 0;
         height: 260px;
     }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .destination__image img{
             height: 400px
@@ -1958,10 +2032,15 @@ button:hover{
     }
 
 .traiff-container {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     /* width: 268px; */
     margin: auto;
     margin-bottom: 30px;
@@ -1974,7 +2053,7 @@ button:hover{
     border: 6px solid #fff;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 360px) {
 
 .traiff-container {
     width: 40%;
@@ -1986,7 +2065,9 @@ button:hover{
 @media (min-width: 900px) {
 
 .traiff-container {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
         width: unset;
         margin: auto;
         margin-bottom: 0px;
@@ -2007,9 +2088,12 @@ button:hover{
 @media (min-width: 900px) {
 
 .traiff-container-head {
+        display: -webkit-box;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         text-align: center;
         font-weight: 700;
         font-size: 20px;
@@ -2034,10 +2118,15 @@ button:hover{
 
 .traiff-container > div, .traiff-container-head > div{
     height: auto;
+    display: -webkit-box;
     display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     width: 92%;
     margin-left: 20px;
     font-size: 14px;
@@ -2046,7 +2135,8 @@ button:hover{
 @media (min-width: 900px) {
 
 .traiff-container > div, .traiff-container-head > div{
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
         width: 18%;
         font-size: 16px;
         min-height: 100px;

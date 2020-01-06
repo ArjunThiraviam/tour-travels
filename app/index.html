@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Drop Taxi Sri Madurai Meenakshi Travels</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <link href="temp/styles/styles.css"  rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500,900" rel="stylesheet">
+    
 </head>
-<body>
-
+<body class="drop-taxi-page">
     <!-- navigation -->
-    <header class="site-header ">
+    <header class="site-header">
         <div class="wrapper">
             <div class="site-header__logo">
                 <div class="icon site-header__logo__graphic">
                     <img src="./assets/images/logo/travels-logo-4.png" alt="">
-                    <!-- <img src="./assets/images/logo/new-logo.png" alt=""> -->
                     <h1>Madurai Meenakshi Travels</h1>
                 </div>
             </div>
@@ -30,280 +29,412 @@
             <div class="site-header__menu-content">
                 <nav class="primary-nav primary-nav--pull-right">
                     <ul>
-                        <li><a class="active-nav" href="./">Home</a></li>
+                        <li><a href="./home.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="./drop-taxi.html">Drop Taxi</a></li>
+                        <li><a class="active-nav" href="./">Drop Taxi</a></li>
                         <li><a href="./tariff.html">Tariff</a></li>
                         <li><a href="./tour.html">Tour Packages</a></li>
-                        <li><a href="./destination.html">Destinations</a></li>
+                        <li><a href="./destination.html">Destination</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>
+    </header>       
     
     <!-- hero -->
-    <div class="large-hero homepage">
+    <div class="large-hero">
         <picture>
-            <img class="large-hero__image heroslide heroslide-1" src="./assets/images/kanyakumari-hero-banner.jpg" alt="kanyakumari">
-            <img class="large-hero__image heroslide heroslide-2" src="./assets/images/banner/banner-1-1.jpg" alt="rameshwaram-pamban-bridge">
-            <img class="large-hero__image heroslide heroslide-3" src="./assets/images/banner/banner-3.jpg" alt="rameshwaram-shore-tip">
-            <img class="large-hero__image heroslide heroslide-4" src="./assets/images/banner/banner-4.jpg" alt="rameshwaram-temple">
+            <source srcset="assets/images/banner/one.jpg" media="(min-width: 980px)">
+            <source srcset="assets/images/banner/one-tab.jpg" media="(min-width: 560px)">
+            <img class="large-hero__image" src="assets/images/banner/one-mob.jpg" alt="kanyakumari ">
         </picture>
             
         <div class="large-hero__text-content">
-          <div class="wrapper">
-              <!-- <h2 class="large-hero__title">kanyakumari</h2> -->
-              <h3 class="large-hero__subtitle"></h3>
-          </div>      
+            <div class="wrapper">
+                <h2 class="large-hero__title">Drop Taxi</h2>
+                <h3 class="large-hero__subtitle"></h3>
+            </div>      
         </div>
-      </div> 
+        </div> 
     </div>
 
-    <div class="container homepage container-large">
-
-    <div class="section" id="choose">
-        <div class="wrapper">
-            <h2>Why choose Us</h2>            
-            <div class="row">
-                <div class="col-md-4 col-s-6">
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/calendar.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/available.jpg" alt="" class="choose__image square">
-                        </div>
-                        <h6>24 x 7 Customer Service</h6>
-                    </div>
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/best-price.svg" alt="" class="choose__image"> -->
-                            <!-- <img src="assets/images/svg/budget-c.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/save.jpg" alt="" class="choose__image  square">
-                        </div>
-                        <h6>Transperent Pricing</h6>
-                    </div>
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/camper-van.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/multiple.jpg" alt="" class="choose__image square">
-                        </div>
-                        <h6>Multiple Car type Options</h6>
-                    </div>  
+    <section class="drop-taxi-price-container">
+        <h2 class="drop-taxi-main-heading">Taxi Price</h2>
+        <div class="drop-taxi-price">
+            <div>
+                <div>
+                    <img src="./assets/images/droptaxi/swift-dzire-Madurai-2.jpg" alt="">
                 </div>
-                <div class="col-md-4 hide-mobile" style="position: relative;">
-                    <img class="car-image" src="assets/images/cars/car-big-side.png" alt="" style="" >
+                <div>
+                    <h4>Sedan</h4>
+                    <h6><span>Drop Trip</span> Rs. 12.00/km</h6>
+                    <h6><span>Round Trip</span> Rs. 10.00/km</h6>
                 </div>
-                <div class="col-md-4 col-s-6">
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/dependable-c2.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/professional.jpg" alt="" class="choose__image square">
-                        </div>
-                        <h6>Well Trained and Friendly Drivers</h6>
-                    </div>
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/hourglass.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/time.jpg" alt="" class="choose__image square">
-                        </div>
-                        <h6>Always on Time</h6>
-                    </div> 
-                    <div class="">
-                        <div class="choose__image-container">
-                            <!-- <img src="assets/images/svg/maintenance-c.svg" alt="" class="choose__image"> -->
-                            <img src="assets/images/choose-us/maintained.jpg" alt="" class="choose__image square">
-                        </div>
-                        <h6>Clean and Well maintained Cars</h6>
-                    </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./assets/images/droptaxi/innova-crysta-Madurai.jpg" alt="">
                 </div>
-
+                <div>
+                    <h4>XUV</h4>
+                    <h6><span>Drop Trip</span> Rs. 15.00/km</h6>
+                    <h6><span>Round Trip</span> Rs. 13.00/km</h6>
+                </div>
             </div>
         </div>
+    </section>
+
+    <div class="other-destinations-call">
+        For destinations other than the below mentioned feel free to call us on <a href="tel:+918667459121">8667459121</a>,        <a href="tel:+918681894167">8681894167</a>.
     </div>
+    <div class="container drop-taxi-section">
+        <section>            
+            <div class="drop-taxi-table-container">
+                <div class="drop-taxi">
+                    <div>
+                        <h2 class="drop-taxi-heading">Drop Trip Estimated Price (Approx.)</h2>
+                    </div>                    
+                    <div class="estimate-box top-box">
+                        <div class="estimate-dest-container">Destination</div>
+                        <div  class="details-container">
+                            <div>Distance</div>
+                            <div>Sedan</div>
+                            <div>XUV</div>
+                        </div>
+                    </div>
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Rameshwaram.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Rameshwaram</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>180 km</div>
+                            <div>Rs. 2,460</div>
+                            <div>Rs. 3,000</div>
+                        </div>
+                    </div>
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Madurai1.jpg" alt="">
+                                <figcaption><span>Rameshwaram to</span> Madurai</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>180 km</div>
+                            <div>Rs. 2,460</div>
+                            <div>Rs. 3,000</div>
+                        </div>
+                    </div>
 
-    <!-- Service Section -->
-    <div class="services section">
-        <div class="wraper">
-            <div class="section__head-block">
-                <h2 class="section__head-block__main-head">Service</h2>
-                <h3 class="section__head-block__sub-head">What we offer</h3>
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Kodaikanal.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Kodaikanal</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>130 km</div>
+                            <div>Rs. 2,360</div>
+                            <div>Rs. 2,750</div>
+                        </div>
+                    </div>
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Madurai2.jpg" alt="">
+                                <figcaption><span>Kodaikanal to</span> Madurai</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>130 km</div>
+                            <div>Rs. 2,360</div>
+                            <div>Rs. 2,750</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Kanyakumari.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Kanyakumari</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>250 km</div>
+                            <div>Rs. 3,300</div>
+                            <div>Rs. 4,050</div>
+                        </div>
+                    </div>
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Madurai3.jpg" alt="">
+                                <figcaption><span>Kanyakumari to</span> Madurai</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>250 km</div>
+                            <div>Rs. 3,300</div>
+                            <div>Rs. 4,050</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-nagercoil.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Nagarcoil</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>250 km</div>
+                            <div>Rs. 3,300</div>
+                            <div>Rs. 4,050</div>                          
+                        </div>  
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Trichy.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Trichy</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>150 km</div>
+                            <div>Rs. 2,100</div>
+                            <div>Rs. 2,550</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Coimbatore3.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Coimbatore</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>240 km</div>
+                            <div>Rs. 3,180</div>
+                            <div>Rs 3,900</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Thekkady.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Thekkady</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>160 km</div>
+                            <div>Rs. 2,220</div>
+                            <div>Rs. 2,700</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Kumily.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Kumily</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>150 km</div>
+                            <div>Rs. 2,100</div>
+                            <div>Rs. 2,550</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Munnar.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Munnar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>180 km</div>
+                            <div>Rs. 3,500</div>
+                            <div>Rs. 4,000</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Ooty.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Ooty</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>320 km</div>
+                            <div>Rs. 5,140</div>
+                            <div>Rs. 6,100</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Tirunelveli2.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Tirunelveli</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>160 km</div>
+                            <div>Rs. 2,220</div>
+                            <div>Rs. 2,700</div>
+                        </div>
+
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Thiruvananthapuram.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Thiruvananthapuram</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>320 km</div>
+                            <div>Rs. 5,140</div>
+                            <div>Rs. 6,100</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Chennai.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Chennai</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>480 km</div>
+                            <div>Rs. 6,060</div>
+                            <div>Rs. 7,500</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Thanjavur.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Thanjavur</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>190 km</div>
+                            <div>Rs. 2,580</div>
+                            <div>Rs. 3,150</div>
+                        </div>
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Palani2.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Palani</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>140 km</div>
+                            <div>Rs. 1,980</div>
+                            <div>Rs. 2,400</div>    
+                        </div>                        
+                    </div>
+
+                    <div class="estimate-box">
+                        <div class="estimate-dest-container">
+                            <figure>
+                                <img src="./assets/images/droptaxi/droptaxi-Thiruchendur.jpg" alt="">
+                                <figcaption><span>Madurai to</span> Thiruchendur</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-container">
+                            <div>190 km</div>
+                            <div>Rs. 2,580</div>
+                            <div>Rs. 3,150</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="service__image-container">
-                        <img src="assets/images/Services/car-fleet.jpg" alt="" class="service__image">
-                    </div>
-                    <div class="service__text-container">
-                        <h4>Car Rentals</h4>
-                        <p>We provide well maintained efficient cars for rentals across South India.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service__image-container">
-                            <img src="assets/images/Services/96fd3fe2f5489096a9042211c24d9581.jpg" alt="" class="service__image">
-                    </div>
-                    <div class="service__text-container">
-                        <h4>Tour Packages</h4>
-                        <p>We provide awesome tour packages. We also offer customize tour packages for corporates and educational institutions.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service__image-container">
-                        <img src="assets/images/Services/bus.jpg" alt="" class="service__image">
-                    </div>
-                    <div class="service__text-container">
-                        <h4>Bus Services</h4>
-                        <p>We book sleeper semi-sleeper Bus of your choice to any destination of your choice in South India.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service__image-container">
-                            <img src="assets/images/Services/flight.jpg" alt="" class="service__image">
-                    </div>
-                    <div class="service__text-container">
-                        <h4>Flight Bookings</h4>
-                        <p>We book Air tickets by domestic and international flights in any class of your choice.</p>
-                    </div>
-                </div>
+        </section>
+        <section class="drop-taxi-terms">
+            <h3>Terms and Conditions</h3>
+            <div>
+                <ul>
+                    <li>Toll Fees, Inter-State Permit charges, Parking charges (if any) are extra.</li>
+                    <li>Round Trips - Please Book Minimum 3 hrs before, Drop Trips - Please Book Minimum 1 day before.</li>
+                    <li>Round Trips - Driver bata Rs. 300, Drop Trips - Driver Bata Rs. 300.</li>
+                    <li>Round Trips - Hill Station Charges Rs. 500, Drop Trips - Hill Station Charges Rs. 500</li>
+                    <li>Round Trips - Minimum running must be 250 kms per day, Drop Trips - Minimum running must be 130 kms per day.</li>
+                    <li>1 day means 1 Calender day (from midnight 12 to Next Midnight 12)</li>
+                    <li>Waiting Charges will be per hour 120rs. (Except 30 min for food.)</li>
+                    <li>Max lagguage capacity by vehicle type Sedan - 2 suitcases, XUV - 5 suitcases</li>
+                </ul>
+                    
             </div>
-        </div>
+        </section>
     </div>
     
-    <div class="drop-taxi-background">
-        <h2>Drop Taxi</h2>
-        <a href="/drop-taxi.html">
-            <button>Book Now</button>
-        </a>
-
-    </div>
-
-    <div  class="section" id="local-places">
-        <div class="tour__text-container">
-            <h2>Local Sight Seeing</h2>
-        </div>
-        <!-- <p style="padding-bottom: 70px;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati modi, minima unde eos ipsa, incidunt inventore doloribus maxime eligendi cupiditate deleniti eveniet voluptatibus, eius quis ex iure autem. Et, autem.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus aperiam quisquam provident itaque? Nam architecto, quasi ducimus molestiae deleniti cum laboriosam, necessitatibus mollitia ut adipisci molestias quod explicabo iure?
-        </p> -->
-        <div class="responsive" >
-                <div>
-                    <p>Meenakshi Amman Kovil</p>
-                    <img src="assets/images/local/Meenakshi Amman Kovil.jpg" alt="">
-                </div>
-                <div >
-                    <p>Gandhi Musuem</p>
-                    <img src="assets/images/local/Gandhi Musuem.jpg" alt="">
-                </div>
-                <div>
-                    <p>Thirumalai Nayakkar Palace</p>
-                    <img src="assets/images/local/Thirumalai Nayakkar Palace.jpg" alt="">
-                </div>
-                <div>
-                    <p>Thiruparan -kundram</p>
-                    <img src="assets/images/local/Thiruparankundram.jpg" alt="">
-                </div>
-                <!-- <div >
-                    <img src="assets/images/local/Rajaji Park.jpg" alt="">
-                </div> -->
-                <div >
-                    <p>Pazhamudir Cholai</p>
-                    <img src="assets/images/local/Pazhamudir Cholai.jpg" alt="">
-                </div>
-                <!-- <div >
-                    <p>Eco Park</p>
-                    <img src="assets/images/local/eco-park.jpg" alt="">
-                </div> -->
-                <div >
-                    <p>Alzagar Kovil</p>
-                    <img src="assets/images/local/Alzagar Kovil.jpg" alt="">
-                </div>
-                <!-- <div >
-                    <p>Athisayam</p>
-                    <img src="assets/images/local/Athisayam.jpg" alt="">
-                </div> -->
-                <div >
-                    <p>Vandiyur Mariyamman Teppakulam</p>
-                    <img src="assets/images/local/Vandiyur Mariyamman Teppakulam.jpg" alt="">
-                </div>
-            </div>         
-    </div>
-    </div>
-
-    <!-- Tours -->
-    <!-- <div class="section" id="tours">
-        <div class="row">
-   
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="tour__image-container">
-                        <img src="" alt="Loacl Sight Seeing" class="tour__image">
-                </div>
-                <div class="tour__text-container">
-                    <a href=""><h6>Local Sight Seeing</h6></a>
-                </div>
+    <footer>
+        <div class="row footer-row">
+            <div class="col-md-3-large col-s-12">
+                <!-- <img src="" alt=""> -->
+                <h6>About Us</h6>
+                <p>We are a professional tour and travel operators in Madurai. We also provide car rentals across South India. We provide a friendly service with good hospitality. Kindly contact us for a wonderful travel experience.<br>We always guarantee a memorable and happy trip. We have well maintained cars with friendly drivers. We are awaiting to serve you.</p>
+            </div>
+            <div class="col-md-3-small col-s-4">
+                <h6>Our Services</h6>
+                <ul>
+                    <li>Car Rentals</li>
+                    <li>Tour Packages</li>
+                    <li>Booking Services</li>
+                    <li>Hotel Bookings</li>
+                </ul>
+            </div>
+            <div class="col-md-3-small col-s-4">
+                <h6>Quick Link</h6>
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Tour Packages</li></a>
+                    <a href=""><li>Destinations</li></a>
+                    <a href=""><li>Tariff</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="col-md-3-small col-s-4">
+                <h6>Contact Info</h6>
+                <p><strong> Address :</strong><br> West Veli Street, <br>
+                        Behind Royal Court, <br>
+                        Madurai – 625001.</p>
+                <p><strong>Phone : <br>
+                    <a href="tel:+918667459121">8667459121</a> ,<br>
+                    <a href="tel:+918681894167">8681894167</a>
+                </strong>
+                    <!-- 8220487369, 8778329170 --></p>
+                
+                <p><strong>Mail Us : </strong>
+                    <!-- info@.com --></p>
+                
             </div>
             
-            <div class="col-md-6">
-                    <div class="tour__image-container">
-                            <img src="" alt="Outstation Sight Seeing" class="tour__image">
-                    </div>
-                    <div class="tour__text-container">
-                        <a href=""><h6>Outstation Sight Seeing</h6></a>
-                    </div>
-                </div>
         </div>
-    </div>
-</div> -->
-<footer>
-    <div class="row footer-row">
-        <div class="col-md-3-large col-s-12">
-            <!-- <img src="" alt=""> -->
-            <h6>About Us</h6>
-            <p>We are a professional tour and travel operators in Madurai. We also provide car rentals across South India. We provide a friendly service with good hospitality. Kindly contact us for a wonderful travel experience.<br>We always guarantee a memorable and happy trip. We have well maintained cars with friendly drivers. We are awaiting to serve you.</p>
+        <div class="copyright">
+            &copy; 2019 <span>Sri Madurai Meenakshi Tours and Travels.</span> All Right Reserved.
         </div>
-        <div class="col-md-3-small col-s-4">
-            <h6>Our Services</h6>
-            <ul>
-                <li>Car Rentals</li>
-                <li>Tour Packages</li>
-                <li>Booking Services</li>
-                <li>Hotel Bookings</li>
-            </ul>
-        </div>
-        <div class="col-md-3-small col-s-4">
-            <h6>Quick Link</h6>
-            <ul>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Tour Packages</li></a>
-                <a href=""><li>Destinations</li></a>
-                <a href=""><li>Tariff</li></a>
-                <a href=""><li>Contact</li></a>
-            </ul>
-        </div>
-        <div class="col-md-3-small col-s-4">
-            <h6>Contact Info</h6>
-            <p><strong> Address :</strong><br> West Veli Street, <br>
-                    Behind Royal Court, <br>
-                    Madurai – 625001.</p>
-            <p><strong>Phone : <br>
-                <a href="tel:+918667459121">8667459121</a> ,<br>
-                <a href="tel:+918681894167">8681894167</a>
-            </strong>
-                <!-- 8220487369, 8778329170 --></p>
-            
-            <p><strong>Mail Us : </strong>
-                <!-- info@.com --></p>
-            
-        </div>
-        
-    </div>
-    <div class="copyright">
-        &copy; 2019 <span>Sri Madurai Meenakshi Tours and Travels.</span> All Right Reserved.
-    </div>
-</footer>
+    </footer>
     <div class="callus-logo">
         <a href="tel:+918667459121">
             <img class="phonecall" src="assets/images/logo/call.png" alt=""><br>
@@ -315,52 +446,121 @@
         </a>
     </div>
 
-    <script src="/temp/scripts/app.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="assets/scripts/slider.js"></script>
-    <style>
+    <div id="myModal" class="modal">
 
-    </style>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="assets/images/popup.jpg" alt="">
+        </div>
+      
+      </div>
+      
 
-    <script>
-    $(document).ready(function(){
-        $('.responsive').slick({
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
-            }
-            },
-            {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
-        });
-    });
+      <style>
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+        }
+        
+        .modal-content img {
+            max-width: 600px;
+            border: 10px solid #fff;
+        }
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          margin: auto;
+          padding: 0;
+          width: 60%;
+          max-width: 600px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.),0 6px 20px 0 rgba(0,0,0,0.19);
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s
+        }
+        
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+        }
+        
+        @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+        }
+        
+        /* The Close Button */
+        .close {
+            color: #000;
+            float: right;
+            font-size: 60px;
+            font-weight: bold;
+            z-index: 999;
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 70px;
+            text-align: center;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .modal-header {
+          padding: 2px 16px;
+          background-color: #5cb85c;
+          color: white;
+        }
+        
+        .modal-body {padding: 2px 16px;}
+        
+        .modal-footer {
+          padding: 2px 16px;
+          background-color: #5cb85c;
+          color: white;
+        }
+        </style>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    setTimeout(function() {
+      modal.style.display = "block";
+    }, 2000);
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    
     </script>
-    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div> -->
+    <script src="/temp/scripts/app.js"></script>
 </body>
 </html>
